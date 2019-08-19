@@ -3,7 +3,7 @@ import React from 'react';
 const Contributions = (props) => {
   const pushes = props.events.filter(event => event.type === 'PushEvent');
   const repos = props.repos.map(repo => repo.name);
-  console.log(props);
+
   return (
     <div>
       <h1>
